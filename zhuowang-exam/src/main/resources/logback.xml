@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+  <!--  &lt;!&ndash;定义项目中日志输出位置&ndash;&gt;
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        &lt;!&ndash;定义项目的日志输出格式&ndash;&gt;
+        &lt;!&ndash;定义项目的日志输出格式&ndash;&gt;
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern> [%p] %d{yyyy-MM-dd HH:mm:ss} %m %n</pattern>
+        </layout>
+    </appender>
+
+    &lt;!&ndash;项目中跟日志控制&ndash;&gt;
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+    </root>
+    &lt;!&ndash;项目中指定包日志控制&ndash;&gt;
+    <logger name="com.baizhi.dao" level="DEBUG"/>-->
+
+
+    <!--定义项目中的日志输出位置-->
+    <appender name = "stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!--定义项目的输出日志格式-->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <!--[%p] :展示日志级别-->
+            <!--[%d] :展示日志时间-->
+            <!--[%m] :展示当前主线程运行输出-->
+            <!--[%n] :回车换行-->
+            <pattern> [%p] %d{yyyy-MM-dd HH:mm:ss} %m %n </pattern>
+        </layout>
+    </appender>
+
+    <!--项目中的跟日志控制-->
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+    </root>
+    <!--项目中指定包日志控制-->
+    <logger name="com.baizhi.dao" level="DEBUG"/>
+</configuration>
