@@ -58,4 +58,9 @@ class ZhuowangExamApplicationTests {
             System.out.println(key);
         }
     }
+	
+	@Test
+	public void test7(){
+		System.out.println("hello world");
+	}
 }
